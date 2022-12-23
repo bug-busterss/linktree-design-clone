@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.link-card {
+  @apply relative flex w-10/12 items-center justify-center rounded-3xl bg-white p-4 shadow-lg transition-all hover:-translate-y-2;
+}
+
+.link-card-img {
+  @apply absolute left-5 h-9 w-9;
+}
+
+.link-card-text {
+  @apply flex-1 text-center text-2xl font-semibold;
+}
