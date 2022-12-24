@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:ital,wght@1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #2a8db1 100%);
+            
+}
+
+:root{
+    --light-color: white;
+    --dark-color: black;
+    --primary-font: 'Playfair Display', serif;
+    --secondary-font: 'Lobster', cursive;
+    
+}
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0px 10px 0px;
+    color: white;
+    font-family: var(--secondary-font);
+    letter-spacing: 1px;
+}
+
+
+#my-img{
+    border-radius: 39%;
+
+}
+#upper-name{
+    position: relative;
+    top: 3%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    color: white;
+    margin:10px 4rem 20px 4rem;
+    background-color: #c3feff2b;
+    height: 90px;
+    border-radius: 100px;
+    font-size: 1.4rem;
+    box-shadow: 2px 2px 2px #daf0f7bd;
+    font-family: var(--primary-font);
+    letter-spacing: 1px;
+    display: none;
+    transition: all 1s linear;
+}
+
+#upper-name>div{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+#img-upper{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 4%;
+    border-radius: 50%;
+}
+/* Logos */
+.logo{
+    height: 50px;
+    width: 30px;
+    margin: 3px 24px 10px 9px;
+}
+
+
+#logo-container{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* Main-body */
+.main-logo{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-right: 30px;
+    left: 10%;
+    top:25%;
+
+}
+.mail-logo{
+    position: absolute;
+    left: 9%;
+    top:23%;
+    width: 60px;
+    height: 40px;
+    margin-right: 30px;
+
+}
+.a-body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    color: white;
+    margin:10px 4rem 20px 4rem;
+    background-color: #00DBDE;
+    height: 90px;
+    border-radius: 100px;
+    font-size: 1.4rem;
+    box-shadow: 30px 13px 9px #00374a;
+    font-family: var(--primary-font);
+    letter-spacing: 1px;
+}
+
+.a-body:hover{
+    color: rgb(0, 68, 72);
+    transform:scale(98%,98%) translateX(2%);
+    box-shadow: 20px 9px 5px #00374a;
+    
+
+}
+/* Share button */
+
+.share{
+    display: none !important;
+    transition: all 0.8s linear;
+}
+.share-vis{
+    position:absolute;
+    right: 5%;
+    top:30%;
+    display: block !important;
+}
+.main-share{
+    position:absolute;
+
+    right: 10%;
+    top:4%;
+    display: block ;
+    background-color: rgba(167, 171, 171, 0.575);
+    padding: 1%;
+    border-radius: 50%;
+    color: var(--light-color);
+
+}
+.main-share:hover{
+    color: var(--dark-color);
+    cursor: pointer;
+}
+.share:hover{
+    border-radius: 50%;
+    padding: 3%;
+    right: 3%;
+    top:8%;
+    background-color: rgba(167, 171, 171, 0.575);
+}
+@media screen and (max-width:1500px) {
+    .a-body{
+        margin: 10px 290px 20px 290px;
+
+    }
+}
+
+
+@media screen and (max-width:1000px) {
+    .a-body{
+        margin: 10px 190px 20px 190px;
+
+    }
+}
+
+@media screen and (max-width:628px) {
+    .a-body{
+        margin: 10px 100px 20px 100px;
+
+    }
+}
+@media screen and (max-width:465px) {
+    .a-body{
+        margin: 10px 10px 20px 10px;
+
+    }
+    
+    #img-upper{
+        display: none;
+    }
+}
+@media screen and (max-width:342px) {
+    .a-body{
+        margin: 10px 2px 20px 2px;
+    }
+    .main-logo{
+        position: relative;
+        display: block;
+        text-align: center;
+        height: 35px;
+        left: 35%;
+        width: 30px;
+    }
+    .mail-logo{
+        position: relative;
+        display: block;
+        text-align: center;
+        left: 28%;
+        width: 30px;
+        
+    }
+    .a-body>.body-img>#insta-p{
+        position: relative;
+        left: 30%;
+    }
+    .a-body>.body-img>span{
+        display: block;
+        overflow-wrap: break-word;
+        text-align: center;
+    }
+  
+    #img-upper{
+        display: none;
+    }
+}
+
