@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+body{
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    /* background: rgb(106,106,106);
+    background: linear-gradient(180deg, rgba(106,106,106,1) 0%, rgba(101,101,101,1) 54%, rgba(0,0,0,1) 100%); */
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'nunito', sans-serif;
+}
+.img-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+}
+div.main-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1rem;
+    font-size: 2rem;
+    align-items: center;
+}
+.all-buttons{
+    display: inline-block;    
+}
+div.text-container{
+    text-align: center;
+}
+.name-container{
+    color: white;
+    text-shadow: 0.1rem 0.1rem 0.2rem black;
+}
+.occupation-container{
+    text-shadow: 0.1rem 0.1rem 0.2rem black;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+i{
+    font-size: 3rem;
+}
+img{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 0.5rem;
+}
+.button-container{  
+    display: flex;
+    color: black;
+    border-radius: 2rem;
+    background-color: white;
+    width: 40rem;
+    height: 3rem;
+    transform: translateY(-3rem);
+}
+.button-container:hover{
+    transform: translate(0.2rem, -2.7rem);
+}
+.shadow-container{
+    box-shadow: 0.5rem 0.7rem 0.1rem 0.1rem;
+    border-radius: 2rem;
+    height: 3rem;
+    color: black;
+    margin-bottom: 0;
+}
+.img-contain{
+    padding-top: 0.3rem;
+    padding-left: 0.6rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    font-family: 'nunito', sans-serif;
+}
+.text-container1{
+    border-end-end-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding-top: 0.5rem;
+    padding-left: 14rem;
+    max-width: 3rem;
+    font-size: 1.5rem;
+    font-family: 'nunito', sans-serif;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.link-container{
+    color: black;    
+    margin-bottom: -1rem;
+}
+.button-component{
+    display: block;
+}
