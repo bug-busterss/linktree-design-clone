@@ -59,13 +59,16 @@ body{
 #upper-name>div{
     display: flex;
     justify-content: center;
-    align-self: center;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 #img-upper{
     width: 50px;
     height: 50px;
     position: absolute;
+    top: 15%;
     left: 4%;
     border-radius: 50%;
 }
